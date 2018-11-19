@@ -135,7 +135,7 @@ transition: all  0.3s ease;
 .email-me {
     font-size: 12px;
     padding: 14px 20px;
-    height: 15px;
+    display: inline-block;
     background-color: #74cfae;
     text-decoration: none;
 }
@@ -222,134 +222,138 @@ footer {
 
 
 @media screen and (max-width: 1199px){
-.inner {
-    width: 97%;
-}
+    .inner {
+        width: 97%;
+    }
 
-.what-we-can-do {
-    padding: 50px 0 25px;
-}
+    .what-we-can-do {
+        padding: 50px 0 25px;
+    }
     
-.what-we-can-do .inner{
-    text-align: center;
-    display: inline-block;
-}
+    .what-we-can-do .inner{
+        text-align: center;
+        display: block;
+    }
 
-.iphone {
-    margin-bottom: 20px;
-    margin-left: 0px;
-}
+    .iphone {
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
 
-.iphone-right {
-    margin-left: 0px;
-}
+    .iphone-right {
+        margin-left: 0px;
+    }
  
-.our-latest-work-grid ul{
-    text-align: center;
-}
+    .our-latest-work-grid ul{
+        text-align: center;
+    }
 
-.photo {
-    float: none;
-    line-height: 0;
-    margin: 0;
-}
+    .photo {
+        float: none;
+        line-height: 0;
+        margin: 0;
+    }
     
-.photo:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
+    .photo:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
 
-.photo:nth-child(3n+3) {
-    margin-bottom: 80px;
-}
+    .photo:nth-child(3n+3) {
+        margin-bottom: 80px;
+    }
     
-.our-latest-work-bottom {
-     text-align: center; 
-     display: inline-block;
-}
+    .our-latest-work-bottom {
+         text-align: center; 
+         display: inline-block;
+    }
 
-.our-latest-work-paragraph {
-    margin: 0 0 40px 0;
-    width: 100%;
-}
+    .our-latest-work-paragraph {
+        margin: 0 0 40px 0;
+        width: 100%;
+    }
     
-.our-skills-grid{
-    text-align: center;
-}
+    .our-skills-grid{
+        text-align: center;
+    }
 
-.our-skills-grid figure {
-    float: none;
-    margin: 0  0 88px 0;  
-}
+    .our-skills-grid figure {
+        float: none;
+        margin: 0  0 88px 0;  
+    }
     
-.our-skills-grid figure:last-child {
-    margin-bottom: 0;    
-}
+    .our-skills-grid figure:last-child {
+        margin-bottom: 0;    
+    }
     
-.sns:nth-child(1) {
-    margin-left: 15%;
-}
+    .icon .inner{
+        justify-content: center;
+    }
+    
+    .sns:nth-child(1) {
+        margin-left: 0px;
+    }   
 }
 
 
 @media screen and (max-width: 766px){
-.contact {
-    display: none;
-}
+    .contact {
+        display: none;
+    }
     
-.humberger {
-  position: relative;
-  float: right;
-  height: 30px;
-  width: 33px;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-.humberger-in {
-    position: absolute;
-    width: 33px;
-    height: 3px;
-    background-color: #ddd;
-}
-.humberger-in:nth-of-type(1) {
-  top: 15px;
-}
-.humberger-in:nth-of-type(2) {
-  top: 25px;
-}
-.humberger-in:nth-of-type(3) {
-  top: 35px;
-}
-
-.main-bolt-theme {
-    padding: 160px 0 130px;
-}
-
-.main-bolt-theme-heading {
-    font-size: 80px;
-}
+    .humberger {
+        position: relative;
+        float: right;
+        height: 30px;
+        width: 33px;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
     
-.br::before {
-	content: "\A" ;
-	white-space: pre ;
-}
-
-.icon {
-    padding: 50px 0;
-}
+    .humberger-in {
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        background-color: #ddd;
+    }
     
-.icon .inner {
-    display: inline-block;
-}
-
-.sns {
-    display: block;
-    margin: 0 15px;
-    width: 100%;
-}
+    .humberger-in:nth-of-type(1) {
+        top: 15px;
+    }
     
-.sns:nth-child(1) {
-    margin-left: 15px;
-}
+    .humberger-in:nth-of-type(2) {
+        top: 25px;
+    }
+    
+    .humberger-in:nth-of-type(3) {
+        top: 35px;
+    }
+
+    .main-bolt-theme {
+        padding: 160px 0 130px;
+    }
+
+    .main-bolt-theme-heading {
+        font-size: 80px;
+    }
+    
+    .br::before {
+	    content: "\A" ;
+	    white-space: pre ;
+    }
+
+    .icon {
+        padding: 50px 0;
+    }
+    
+    .icon .inner {
+        display: inline-block;
+    }
+
+    .sns {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
 }
